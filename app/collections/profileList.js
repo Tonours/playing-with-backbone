@@ -1,6 +1,6 @@
 var Backbone = require('backbone');
 var config = require('../config');
-var Profile = require('../models/Profile');
+var Profile = require('../models/profile');
 
 module.exports = Backbone.Collection.extend({
   model: Profile,

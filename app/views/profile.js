@@ -1,6 +1,6 @@
 var Backbone = require('backbone');
 var template = require('../templates/user.html');
-var ProfileList = require('../collections/ProfileList');
+var ProfileList = require('../collections/profileList');
 
 module.exports = Backbone.View.extend({
   el: '#result',
