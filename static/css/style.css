@@ -1,0 +1,14 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+  .search {
+    margin: 30px auto;
+  }
+
+    .search__form {
+      text-align: center;
+    }

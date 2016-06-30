@@ -1,0 +1,22 @@
+{
+  "name": "backbone-github",
+  "version": "0.0.1",
+  "description": "Training with Babckbone.js and Github api",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -t [ node-underscorify --extensions html ] app/main.js -o static/js/app.js",
+    "watch": "watchify -t [ node-underscorify --extensions html ] app/main.js -o static/js/app.js -v",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anthony Guimard",
+  "license": "ISC",
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "jquery": "^3.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "node-underscorify": "0.0.14",
+    "watchify": "^3.7.0"
+  }
+}

@@ -1,0 +1,24 @@
+<div class="ui card">
+  <a href="<%= html_url %>" target="_blank" class="image">
+    <img src="<%= avatar_url %>" alt="Avatar of <%= name %>">
+  </a>
+  <div class="content">
+    <a class="header"><%= name %></a>
+    <div class="description">
+      <% if (bio !== null) { %>
+          <%= bio %> <br />
+          This user follow <%= following %> persons and has <%= followers %> Followers. <br />
+          And create <%= public_repos %> repo(s) and <%= public_gists %> Gist(s).
+      <% } else { %>
+        This user follow <%= following %> persons and has <%= followers %> Followers.<br />
+        And create <%= public_repos %> repo(s) and <%= public_gists %> Gist(s).
+      <% } %>
+    </div>
+  </div>
+  <div class="extra content">
+    <a>
+      <i class="user icon"></i>
+      <%= followers %> Followers
+    </a>
+  </div>
+</div>
